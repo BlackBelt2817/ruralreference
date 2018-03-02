@@ -55,7 +55,7 @@ handleSubmit(e) {
                       return alert('You must enter a search term!');
                     }
                     if (this.state.word) {
-                      axios.get(`http://api.urbandictionary.com/v0/define?term=${this.state.word}`)
+                      axios.get(`https://api.urbandictionary.com/v0/define?term=${this.state.word}`)
                       .then(res => {
                         let holder = [];
                         for (let i = 0; i < 10; i++) {
